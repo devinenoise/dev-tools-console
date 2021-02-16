@@ -19,13 +19,13 @@
       p.style.fontSize = '50px';
     }
 
-const emoji = '😀';
     // Regular
     console.log('hello');
-
+    
     // Interpolated
+    const emoji = '😀';
 console.log('Hello I am a %s string!', '😀')
-console.log(`Hello I am a ${emoji} string!`)
+console.log(`Hello I am a ${emoji} string with a template literal!`)
 
     // Styled
 console.log('%cI am some great text', 'font-size:50px; background:red; ')
@@ -52,6 +52,7 @@ console.dir(p);
 
     // Grouping together
 dogs.forEach(dog => {
+  // console.group(`${dog.name}`);
   console.groupCollapsed(`${dog.name}`);
   console.log(`This is ${dog.name}`);
   console.log(`${dog.name} is ${dog.age} years old`);
